@@ -1,17 +1,10 @@
 import { defineConfig } from 'vitepress'
 
-// https://vitepress.dev/reference/site-config
 export default defineConfig({
-     base: "Simplenote",
+     base: "/Simplenote",
      title: "Simplenote",
      description: "Record the world",
      themeConfig: {
-          // https://vitepress.dev/reference/default-theme-config
-          nav: [
-               { text: 'Home', link: '/' },
-               { text: 'Examples', link: '/markdown-examples' }
-          ],
-
           sidebar: [
                {
                     text: 'Examples',
@@ -25,7 +18,21 @@ export default defineConfig({
                provider: "local"
           },
           socialLinks: [
-               { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-          ]
+               { icon: 'github', link: 'https://github.com/euuen/Simplenote' }
+          ],
+          docFooter: {
+			prev: '上一篇文章',
+			next: '下一篇文章',
+		},
+          returnToTopLabel: '返回顶部',
+          sidebarMenuLabel: '目录',
+          outlineTitle: '页内导航',
+          lastUpdatedText: '最后更新于',
+          lastUpdated: true,
+          outline : [1, 6],
+          footer: {
+               message: 'developed by euuen',
+               copyright: 'Copyright © 2025 euuen',
+          },
      }
 })
