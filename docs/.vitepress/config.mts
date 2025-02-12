@@ -5,15 +5,27 @@ export default defineConfig({
      title: "Simplenote",
      description: "Record the world",
      themeConfig: {
-          sidebar: [
-               {
-                    text: 'Examples',
-                    items: [
-                         { text: 'Markdown Examples', link: '/markdown-examples' },
-                         { text: 'Runtime API Examples', link: '/api-examples' }
-                    ]
-               }
+          nav: [
+               { text: "计算机", link: "/computer"}
           ],
+          sidebar: {
+               "/GLFW": [
+                    { 
+                         text: "初来乍到", 
+                         collapsed: false,
+                         items: [
+                              { text: "简介", link: "/GLFW/tutorial/intro"}
+                         ]
+                    },
+                    {
+                         text: "CookBook",
+                         collapsed: true,
+                         items: [
+                              { text: "基本窗口管理", link: "/GLFW/cookbook/basicWindow"}
+                         ]
+                    }
+               ]
+          },
           search: {
                provider: "local"
           },
@@ -34,5 +46,8 @@ export default defineConfig({
                message: 'developed by euuen',
                copyright: 'Copyright © 2025 euuen',
           },
+     },
+     markdown: {
+          lineNumbers: true
      }
 })
