@@ -4,7 +4,9 @@ export default defineConfig({
      base: "/Simplenote",
      title: "Simplenote",
      description: "Record the world",
+     head: [['link', { rel: 'icon', href: '/Simplenote/favicon.ico' }]],
      themeConfig: {
+          logo: "/favicon.ico",
           nav: [
                { text: "计算机", link: "/computer"}
           ],

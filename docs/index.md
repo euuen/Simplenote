@@ -5,7 +5,7 @@ layout: home
 hero:
   name: "Simplenote"
   text: "Record the world"
-  tagline: nota nota
+  tagline: 通俗易懂，老少皆宜
   # image: 
     # src: /headimg.jfif
   actions:
