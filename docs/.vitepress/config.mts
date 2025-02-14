@@ -1,7 +1,7 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-     base: "/Simplenote",
+     base: "/Simplenote/",
      title: "Simplenote",
      description: "Record the world",
      head: [['link', { rel: 'icon', href: '/Simplenote/favicon.ico' }]],
