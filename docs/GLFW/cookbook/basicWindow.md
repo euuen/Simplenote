@@ -31,6 +31,8 @@ glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
 |--------------------------|------------|----|
 |GLFW_CONTEXT_VERSION_MAJOR|OpenGL主版本|建议用最新版OpenGL,4。如果你的电脑支持的话|
 |GLFW_CONTEXT_VERSION_MINOR|OpenGL副版本|建议用4.3的OpenGL，3|
+|GLFW_RESIZABLE|设置窗口是否可以放缩|GL_FALSE表示不可以放缩，反之同理|
+|GLFW_OPENGL_PROFILE|表示是启用核心gl功能还是兼容gl功能|GLFW_OPENGL_CORE_PROFILE表示核心gl功能，代表现代OpenGL。GLFW_OPENGL_COMPAT_PROFILE表示兼容模式，可以用旧gl功能|
 
 ### 创建窗口
 

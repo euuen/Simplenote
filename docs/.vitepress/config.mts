@@ -20,10 +20,32 @@ export default defineConfig({
                          ]
                     },
                     {
-                         text: "CookBook",
+                         text: "按名称分类",
+                         collapsed: true,
+                         link: "/GLFW/dict/basic",
+                         items: [
+                              
+                         ]
+                    },
+                    {
+                         text: "按功能分类",
                          collapsed: true,
                          items: [
                               { text: "基本窗口管理", link: "/GLFW/cookbook/basicWindow"}
+                         ]
+                    }
+               ],
+               "/GLEW": [
+                    {
+                         text: "初来乍到",
+                         link: "/GLEW/tutorial/intro"
+                    },
+                    {
+                         text: "按功能分类",
+                         collapsed: true,
+                         items: [
+                              { text: "渲染基本内容", link: "/GLEW/cookbook/content" },
+                              { text: "缓冲区管理", link: "/GLEW/cookbook/buffer"}
                          ]
                     }
                ]
