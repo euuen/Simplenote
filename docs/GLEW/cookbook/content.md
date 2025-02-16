@@ -17,21 +17,10 @@ glClear(GL_DEPTH_BUFFER_BIT | GL_COLOR_BUFFER_BIT);
 |GL_ACCUM_BUFFER_BIT|累积缓冲区|
 |GL_STENCIL_BUFFER_BIT|模具缓冲区|
 
-<div style="display: flex;align-items: center;justify-content: center;">
-    <figure style="width: 200px;">
-        <img src="/favicon.ico" alt="">
-        <figcaption>hello</figcaption>
-    </figure>
-    <figure style="width: 50px;">
-        <img src="/favicon.ico" alt="">
-        <figcaption>hello</figcaption>
-    </figure>
-    <figure style="width: 50px;">
-        <img src="/favicon.ico" alt="">
-        <figcaption>hello</figcaption>
-    </figure>
-    <figure style="width: 50px;">
-        <img src="/favicon.ico" alt="">
-        <figcaption>hello</figcaption>
-    </figure>
-</div>
+::: tip
+你还可以选择用什么颜色来清除或者说是填充窗口。OpenGL默认用的是黑色。你可以用下面的代码来转为红色。（RGB码）
+
+```cpp
+glClearColor(1.0f, 0.0f, 0.0f, 1.0f);
+```
+:::

@@ -1,1 +1,1 @@
-pnpm run docs:dev
+pnpm run docs:dev --host

@@ -11,7 +11,7 @@ export default defineConfig({
                { text: "计算机", link: "/computer"}
           ],
           sidebar: {
-               "/GLFW": [
+               "/GLFW/": [
                     { 
                          text: "初来乍到", 
                          collapsed: false,
@@ -35,7 +35,7 @@ export default defineConfig({
                          ]
                     }
                ],
-               "/GLEW": [
+               "/GLEW/": [
                     {
                          text: "初来乍到",
                          link: "/GLEW/tutorial/intro"
@@ -45,7 +45,21 @@ export default defineConfig({
                          collapsed: true,
                          items: [
                               { text: "渲染基本内容", link: "/GLEW/cookbook/content" },
-                              { text: "缓冲区管理", link: "/GLEW/cookbook/buffer"}
+                              { text: "缓冲区管理", link: "/GLEW/cookbook/buffer" },
+                              { text: "着色器", link: "/GLEW/cookbook/shader"}
+                         ]
+                    }
+               ],
+               "/HTML/": [
+                    {
+                         text: "初来乍到",
+                         link: "/HTML/tutorial/intro"
+                    },
+                    {
+                         text: "按功能分类",
+                         collapsed: true,
+                         items: [
+                              { text: "更好的图片显示", link: "/HTML/cookbook/betterImg" }
                          ]
                     }
                ]
