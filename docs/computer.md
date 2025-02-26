@@ -7,7 +7,10 @@
 
 ## 计算机语言
 
+- [C++](/CPP/tutorial/intro)
 - [HTML](/HTML/tutorial/intro)
+- [Java](/Java/tutorial/intro)
+- [SQL](/SQL/tutorial/intro)
 
 ## 前端
 

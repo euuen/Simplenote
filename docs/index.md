@@ -29,8 +29,6 @@ features:
     details: 觉得本项目好的话请给一个免费的star吧
 ---
 
-测试中...
-
 <div style="display: flex;background-color: #3b3b3b;">
     <ul>
         <li>11111</li>

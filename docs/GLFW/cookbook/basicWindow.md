@@ -2,7 +2,7 @@
 
 ## 资源管理
 
-### 初始化
+## 初始化
 
 ::: warning 警告
 一定要初始化GLFW，GLFW才可以用!
@@ -12,7 +12,7 @@
 glfwInit();
 ```
 
-### 清理GLFW
+## 清理GLFW
 
 ```cpp
 glfwTerminate();
@@ -21,7 +21,7 @@ glfwTerminate();
 
 ## 窗口管理
 
-### 窗口参数
+## 窗口参数
 
 ```cpp
 glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
@@ -34,7 +34,7 @@ glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
 |GLFW_RESIZABLE|设置窗口是否可以放缩|GL_FALSE表示不可以放缩，反之同理|
 |GLFW_OPENGL_PROFILE|表示是启用核心gl功能还是兼容gl功能|GLFW_OPENGL_CORE_PROFILE表示核心gl功能，代表现代OpenGL。GLFW_OPENGL_COMPAT_PROFILE表示兼容模式，可以用旧gl功能|
 
-### 创建窗口
+## 创建窗口
 
 ```cpp
 GLFWwindow* window_handle = glfwCreateWindow(200, 200, "hello opengl", NULL, NULL);
@@ -42,31 +42,31 @@ GLFWwindow* window_handle = glfwCreateWindow(200, 200, "hello opengl", NULL, NUL
 
 然后，你需要给当前窗口创建OpenGL环境才能使用OpenGL
 
-### 销毁窗口
+## 销毁窗口
 
 ```cpp
 glfwDestroyWindow(window_handle);
 ```
 
-### 创建OpenGL环境
+## 创建OpenGL环境
 
 ```cpp
 glfwMakeContextCurrent(window_handle);
 ```
 
-### 收集事件
+## 收集事件
 
 ```cpp
 glfwPollEvents();
 ```
 
-### 判断窗口是否应该关闭
+## 判断窗口是否应该关闭
 
 ```cpp
 glfwWindowShouldClose(window_handle);
 ```
 
-### 刷新屏幕或交换缓冲区
+## 刷新屏幕或交换缓冲区
 
 ```cpp
 glfwSwapBuffers(window_handle);
@@ -80,9 +80,9 @@ glfwSwapInterval(1);
 ```
 :::
 
-### 获取事件
+## 获取事件
 
-#### 直接获取按键状态
+### 直接获取按键状态
 
 ```cpp
 // 直接查询当前的按键情况
@@ -95,7 +95,7 @@ glfwGetKey(window_handle, key);
 |GLFW_REPEATED|一直按着|
 |GLFW_RELEAESED|松开|
 
-#### 直接获取鼠标状态
+### 直接获取鼠标状态
 
 ```cpp
 glfwGetMouseButton(window_handle, button);
@@ -107,7 +107,7 @@ glfwGetMouseButton(window_handle, button);
 |GLFW_REPEATED|一直按着|
 |GLFW_RELEAESED|松开|
 
-#### 键盘事件
+### 键盘事件
 
 ```cpp
 // callback函数
@@ -122,7 +122,7 @@ glfwSetKeyCallback(window_handle, key_callback);
 |GLFW_REPEATED|一直按着|
 |GLFW_RELEAESED|松开|
 
-#### 鼠标事件
+### 鼠标事件
 
 ```cpp
 // 隐藏鼠标

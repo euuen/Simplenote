@@ -62,7 +62,42 @@ export default defineConfig({
                               { text: "更好的图片显示", link: "/HTML/cookbook/betterImg" }
                          ]
                     }
-               ]
+               ],
+               "Java": [
+                    {
+                         text: "按需求分类",
+                         collapsed: true,
+                         items: [
+                              { text:"文件操作", link:"/Java/cookbook/file" },
+                              { text:"SQL数据库", link:"/Java/cookbook/database"}
+                         ]
+                    }
+               ],
+               "SQL": [
+                    {
+                         text: "初来乍到",
+                         collapsed: false,
+                         items: [
+                              { text: "简介", link: "/SQL/tutorial/intro" },
+                              { text: "基础", link: "/SQL/tutorial/basic" }
+                         ]
+                    }
+               ],
+               "CPP": [
+                    {
+                         text: ""
+                    },
+                    {
+                         text: "常见编译错误",
+                         collapsed: true,
+                         items: [
+                              {
+                                   text: "链接错误",
+                                   link: "/CPP/errors/linkerror"
+                              }
+                         ]
+                    }
+               ],
           },
           search: {
                provider: "local"
@@ -79,13 +114,14 @@ export default defineConfig({
           outlineTitle: '页内导航',
           lastUpdatedText: '最后更新于',
           lastUpdated: true,
-          outline : [1, 6],
+          outline : [2, 6],
           footer: {
                message: 'developed by euuen',
                copyright: 'Copyright © 2025 euuen',
           },
      },
      markdown: {
-          lineNumbers: true
+          math: true,
+          lineNumbers: true,
      }
 })
