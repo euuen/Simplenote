@@ -4,8 +4,6 @@
     <smiles dat="[Na]O-C1C=CC=CC=1"></smiles><p class="mathjax">\(+ \ce{H_2CO_3 ->[条件][\Delta]}\)</p><smiles dat="O-C1C=CC=CC=1"></smiles><p class="mathjax">\(+ \ce{NaHCO_3}\)</p>
 </div>
 
-[test](/test.md)
-
 ## 计算机图形学
 
 - [GLFW](/GLFW/tutorial/intro)

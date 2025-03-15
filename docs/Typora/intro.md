@@ -14,7 +14,7 @@ regedit
 HKEY_CURRENT_USER\Software\Typora
 ```
 
-![reg](F:\SNT_Vitepress\Simplenote\docs\Typora\imgs\reg.jpg)
+![reg](/imgs/reg.jpg)
 
 设置IDate为未来的日期，如上，我现在是2025/3/12，可以设置为2027年。
 
