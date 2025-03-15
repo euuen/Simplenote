@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MathJax HTML 示例</title>
+    
+    <!-- 1. 引入 MathJax -->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <!-- 2. 配置 MathJax -->
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']], // 行内公式分隔符
+                displayMath: [['$$', '$$'], ['\\[', '\\]']], // 块级公式分隔符
+            },
+            options: {
+                ignoreHtmlClass: 'no-math', // 忽略包含此类的元素
+                processHtmlClass: 'mathjax' // 强制处理包含此类的元素
+            }
+        };
+    </script>
+</head>
+<body>
+    $E=mc^2$
+    <!-- 3. 普通段落中的公式 -->
+    <p class="mathjax">
+        行内公式示例：爱因斯坦的质能方程 $E = mc^2$ 或 \(E = mc^2\)。
+    </p>
+
+    <!-- 4. div 块中的公式 -->
+    <div class="mathjax">
+        勾股定理：
+        $$
+        a^2 + b^2 = c^2
+        $$
+        或
+        \[
+        a^2 + b^2 = c^2
+        \]
+    </div>
+
+    <!-- 5. 复杂公式示例 -->
+    <div class="mathjax">
+        求和公式：
+        $$
+        \sum_{i=1}^n i = \frac{n(n+1)}{2}
+        $$
+    </div>
+</body>
+</html>

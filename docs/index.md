@@ -5,7 +5,7 @@ layout: home
 hero:
   name: "Simplenote"
   text: "Record the world"
-  tagline: 简单札记
+  tagline: 秉文明微光，照人类前行
   # image: 
     # src: /headimg.jfif
   actions:
@@ -29,6 +29,18 @@ features:
     details: 觉得本项目好的话请给一个免费的star吧
 ---
 
+
+
+<!-- <script src="https://unpkg.com/smiles-drawer@1.0.10/dist/smiles-drawer.min.js">
+  let options = {width: 320, height: 180};
+  // 初始化到canvas的绘图器
+  let smilesDrawer = new SmilesDrawer.Drawer(options);
+  SmilesDrawer.parse("C1C=CC=CC=1", function(tree){
+    smilesDrawer.draw(tree, "test", "dark", false);
+  });
+</script> -->
+
+<!-- 
 <div style="display: flex;background-color: #3b3b3b;">
     <ul>
         <li>11111</li>
@@ -54,4 +66,4 @@ features:
             </div>
         </div>
     </div>
-</div>
+</div> -->

@@ -3,7 +3,7 @@ import { h } from 'vue'
 import type { Theme } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
 import './style.css'
-import SmilesRenderer from './SmilesRenderer.vue';
+import smiles from './smiles.vue'
 
 export default {
   extends: DefaultTheme,
@@ -14,6 +14,7 @@ export default {
   },
   enhanceApp({ app, router, siteData }) {
     // ...
-app.component('SmilesRenderer', SmilesRenderer);
+    // app.component('SmilesDrawer', SmilesDrawer);
+    app.component("smiles", smiles);
   }
 } satisfies Theme

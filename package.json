@@ -1,6 +1,6 @@
 {
   "devDependencies": {
-    "openchemlib": "^8.18.1",
+    "smiles-drawer": "^2.1.7",
     "vitepress": "^1.6.3"
   },
   "scripts": {

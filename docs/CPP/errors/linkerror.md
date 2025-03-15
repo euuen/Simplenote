@@ -7,3 +7,11 @@
 如果你用的是GUN编译器（包括MinGW，Clang），lib`xxx`.a是规范。你在写链接库时只要写`xxx`即可。
 
 >注意某些库有32等奇怪字样。虽然它们是64位的
+
+## 少链接某些库了
+
+在Windows下，一些库依赖了Windows的一些库。比如glew依赖opengl32库。在使用glew时，要链接opengl32库。要不然会报错Undefined Reference to `xxx`。
+
+你可以直接搜索`xxx`，一般的第一个搜索结果是微软自己搞的关于`xxx`的文档。直接翻到最底下，看是哪个库的，然后添加即可。
+
+>当年我的SDL就是这么配置的，什么gdi32，user32，opengl32。。。
